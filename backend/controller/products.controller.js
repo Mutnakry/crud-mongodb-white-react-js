@@ -10,7 +10,6 @@ export const createProduct = async (req, res) => {
             return res.status(400).json({ message: "Category not found" });
         }
 
-        // Create a new product
         const newProduct = new Product({
             names,
             price,
